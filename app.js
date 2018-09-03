@@ -28,7 +28,10 @@ app.get('/', (req,res) => {
     res.sendFile(__dirname + "/index.html")
 });
 
-
+//
+app.get('/testgit', (req,res) => {
+    res.json({json : "ok"})
+});
 
 
 //  start server
